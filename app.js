@@ -4,8 +4,15 @@ var express = require('express');
 var app = express();
 
 var port = process.env.PORT || 5000;
+var navi = [{
+    Link: '/Books',
+    Text: 'Books'
+}, {
+    Link: '/Author',
+    Text: 'Author'
+}];
 
-var bookRouter = require('./src/routes/bookRoutes');
+var bookRouter = require('./src/routes/bookRoutes')(navi);
 
 //used by express first
 app.use(express.static('public'));
