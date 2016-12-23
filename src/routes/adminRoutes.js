@@ -6,11 +6,13 @@ var books = [{
     title: 'War and peace',
     genre: 'Historical Fiction',
     author: 'Lev Niko',
+    bookId: 40929,
     read: false
 }, {
     title: 'Book 2',
     genre: 'Genre 2',
     author: 'Author 2',
+    bookId: 18222840,
     read: false
 }];
 
